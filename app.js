@@ -12,6 +12,6 @@ function initMap() {
     const marker = new google.maps.Marker({
         position:{lat: 43.66090177575299, lng: -79.39639225889357},
         map:map,
-        icon:"https://static.thenounproject.com/png/12314-200.png"
+        icon:"https://github.com/PakmanGames/Stroom-Google-Maps-API/blob/main/YouAreHere50x50.jpg?raw=true"
     });
 }

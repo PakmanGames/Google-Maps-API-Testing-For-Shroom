@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <!-- Main Stylesheet -->
     <title>Google Maps API</title>
     <link rel="stylesheet" href="/style.css">
 
 </head>
 <body>
-    <h1>Stroom</h1>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="headline">
+            <h1>Stroom &copy</h1>
+        </div>
+        <!-- Stroom Logo and Navigation Bar -->
+        <img class="pg" src="StroomLogo.png" alt="Error" />
+        <div class="navbar">
+            <!-- Maps Navigation Link -->
+            <li><a href="#" onclick="displayMap()">Maps</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </div>
+    </div>
 
-    <div id="map"></div>
-
+    <!-- Google Maps API -->
+    <div id="map" style="display: none;"></div>
     <script defer
     src="https://maps.googleapis.com/maps/api/js?key=APIgoesHere&callback=initMap">
     </script>
-    <script src="/app.js"></script>
+    
+    <!-- Main JavaScript File for Map-->
+    <script src="/map.js"></script>
+
+    <!-- Function to display the map -->
+    <script>
+        function displayMap() {
+            document.getElementById('map').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
